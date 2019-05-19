@@ -1,4 +1,5 @@
-from django.views.generic import TemplateView
+from django.http import HttpResponse
 
-class HomePageView(TemplateView):
-    template_name = 'index.html'
+
+def homePageView(request):
+    return HttpResponse('Hello, CohPy!')
